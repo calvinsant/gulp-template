@@ -1,0 +1,30 @@
+{
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "Ongoing gulp template for web development",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-minify-css": "^1.2.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvinsant/gulp-template.git"
+  },
+  "author": "Santek Online",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calvinsant/gulp-template/issues"
+  },
+  "homepage": "https://github.com/calvinsant/gulp-template#readme"
+}
