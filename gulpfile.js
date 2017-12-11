@@ -2,10 +2,11 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat'),
 	minifyCss = require('gulp-clean-css'),
-	sourceMaps = require('gulp-sourcemaps');
+	sourceMaps = require('gulp-sourcemaps'),
+	watch = require('gulp-watch');
 
 gulp.task('default', function(){
-	gulp.run('js','css');
+	gulp.start('js','css');
 });
 
 gulp.task('css',function(){
@@ -26,12 +27,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.run('default');
-	gulp.watch('./src/css/*', function(){
-		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-		gulp.run('css');
-	});
-	gulp.watch('./src/js/*', function(){
-		console.log('File ' + event.path + ' was ' + event.type + ', running task...');
-	});
+	gulp.start('default');
+	gulp.watch('./src/css/*.css', ['css']);
+	gulp.watch('./src/js/*', ['js']);
 });

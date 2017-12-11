@@ -12,6 +12,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
     "live-server": "^1.2.0"
   },
   "scripts": {

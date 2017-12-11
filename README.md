@@ -9,4 +9,4 @@ Ongoing template for web development code optimization
 6.  Configure gulp.js directories to match the current project.
 7.  Within gitbash run "gulp watch".
 
-Now, all of your specified style and js files will automatically minified, concatinated and exported to your specified location in your projects root directory upon save!
+Now, all of your specified style and js files will automatically minified, concatinated and exported to your specified location in your projects roo upotn save!
